@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="classes" name="Failed suite [Parallel test suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.testnglearners.Listener"/>
+  </listeners>
+  <test parallel="methods" name="Regression 1(failed)">
+    <parameter name="myname" value="rajesh"/>
+    <classes>
+      <class name="org.testnglearners.TestNGparallel">
+        <methods>
+          <include name="Test4"/>
+        </methods>
+      </class> <!-- org.testnglearners.TestNGparallel -->
+    </classes>
+  </test> <!-- Regression 1(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="3">
+<listeners>  
+<listener class-name="org.testnglearners.Listener"/>  
+</listeners>  
+  <test name="Regression 1" verbose ="2" parallel="methods">
+  <parameter name = "myname" value = "rajesh" /> 
+  <groups> 
+  <run>
+   <include name = "smoke" /> 
+   </run>   
+  </groups> 
+   
+    <classes>
+   <!--   <class name="org.testnglearners.TestNGparallel">  -->
+     <class name="org.testnglearners.Testng">
+     
+</class>
+       
+    </classes>
+  </test>
+</suite>
